@@ -1,7 +1,7 @@
 
 import type { NuxtLink } from '#build/components';
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Intro NUXT</a>
       <button
@@ -25,6 +25,9 @@ import type { NuxtLink } from '#build/components';
           </li>
           <li class="nav-item">
             <NuxtLink class="nav-link active" aria-current="page" to="/about">About</NuxtLink>
+          </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link active" aria-current="page" to="/post">Post</NuxtLink>
           </li>
         </ul>
       </div>

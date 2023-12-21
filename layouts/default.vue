@@ -1,16 +1,20 @@
 <template>
   <div>
     <Navbar />
-    <main>
+    <main class="container p-3 my-5 border rounder shadow">
       <slot />
     </main>
-    <footer>&copy; Hugo Martínez -{{ currentYear }}</footer>
+    <Footer />
   </div>
 </template>
 
 <script setup>
 // import stylesheet from bootstrap
 useHead({
+  titleTemplate: "%s - Intro Nuxt",
+  bodyAttrs: {
+    class: "text-center",
+  },
   link: [
     {
       rel: "stylesheet",
